@@ -54,8 +54,8 @@ class Persons extends Component {
                 name={person.name}
                 age={person.age}
                 click={() => this.props.clicked(index)}
-                key={person.id}
-                change={(event) => this.props.changed(event, person.id)}
+                key={person.key}
+                change={(event) => this.props.changed(event, person.key)}
             />
 
         });
